@@ -1,4 +1,4 @@
-rootProject.name = "appcha"
+rootProject.name = "appcha-server"
 
 include("server")
 include("server-test")
