@@ -4,8 +4,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class AppchaServerApplication
+class ServerApplication
 
 fun main(args: Array<String>) {
-    runApplication<AppchaServerApplication>(*args)
+    runApplication<ServerApplication>(*args)
 }

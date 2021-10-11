@@ -1,6 +1,6 @@
 
 plugins {
-    id("org.springframework.boot") version "2.5.4"
+    id("org.springframework.boot") version "2.4.8"
     id("com.palantir.docker") version "0.26.0"
 }
 
@@ -19,7 +19,7 @@ val gradleUserHomeDir = project.gradle.gradleUserHomeDir.normalize()
 
 docker {
     name = "appcha-server"
-    files("build/libs/server-0.0.1-SNAPSHOT.jar", "../../bin/run-java.sh", "../../bin/run.sh")
+    files("build/libs/server-0.0.1-SNAPSHOT.jar", "../../bin/run-java.sh")
 
     copySpec.with(
         copySpec {
