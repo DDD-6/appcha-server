@@ -4,6 +4,7 @@ import io.spring.gradle.dependencymanagement.dsl.DependencyManagementExtension
 val kotlinVersion: String by project
 val springBootVersion: String by project
 val protobufVersion: String by project
+val grpcVersion: String by project
 
 plugins {
 	id("io.spring.dependency-management") version "1.0.11.RELEASE"
@@ -36,6 +37,8 @@ subprojects {
 	configure<DependencyManagementExtension> {
 		imports {
 			mavenBom("org.springframework.boot:spring-boot-dependencies:$springBootVersion")
+			mavenBom("com.google.protobuf:protobuf-bom:$protobufVersion")
+			mavenBom("io.grpc:grpc-bom:$grpcVersion")
 		}
 		dependencies {
 			dependency("org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion")
