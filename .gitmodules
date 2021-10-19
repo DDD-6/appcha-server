@@ -1,4 +1,0 @@
-[submodule "modules/appcha-protocol"]
-	path = modules/appcha-protocol
-	url = https://github.com/DDD-6/appcha-protocol
-	branch = main
