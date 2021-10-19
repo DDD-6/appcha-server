@@ -1,0 +1,3 @@
+[submodule "appcha-protobuf"]
+	path = appcha-protobuf
+	url = https://github.com/DDD-6/appcha-protobuf.git
