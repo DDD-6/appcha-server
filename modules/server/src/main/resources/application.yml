@@ -1,0 +1,3 @@
+spring:
+  datasource:
+    url: "https://dynamodb.ap-southeast-2.amazonaws.com"
